@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Photon</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo App</title>
 
-    <!-- Stylesheets -->
+    <!-- Photon.css -->
     <link rel="stylesheet" href="../css/photon.css">
 
     <!-- Javascript -->
     <script src="js/menu.js" charset="utf-8"></script>
+
+    <style>
+      .window {
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .sidebar {
+        background-color: #f5f5f4;
+      }
+    </style>
   </head>
   <body>
     <div class="window">
-
-      <!-- .toolbar-header sits at the top of your app -->
       <header class="toolbar toolbar-header">
         <h1 class="title">Photon</h1>
+
+        <div class="toolbar-actions">
+
+          <div class="btn-group">
+            <button class="btn btn-default" type="button">
+              <span class="icon icon-home"></span>
+            </button>
+            <button class="btn btn-default" type="button">
+              <span class="icon icon-folder"></span>
+            </button>
+            <button class="btn btn-default active" type="button">
+              <span class="icon icon-cloud"></span>
+            </button>
+            <button class="btn btn-default" type="button">
+              <span class="icon icon-popup"></span>
+            </button>
+            <button class="btn btn-default" type="button">
+              <span class="icon icon-shuffle"></span>
+            </button>
+          </div>
+
+          <button class="btn btn-default" type="button">
+            <span class="icon icon-home icon-text"></span>
+            Filters
+          </button>
+
+          <button class="btn btn-default btn-dropdown pull-right js-popover-trigger" type="button">
+            <span class="icon icon-megaphone"></span>
+          </button>
+        </div>
       </header>
 
-      <!-- Your app's content goes inside .window-content -->
       <div class="window-content">
         <div class="pane-group">
           <div class="pane pane-sm sidebar">
@@ -52,8 +91,46 @@
                 Desktop
               </span>
             </nav>
-          </div>
 
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Tags</h5>
+              <span class="nav-group-item" href="#">
+                <span class="icon icon-record" style="color:#fc605b"></span>
+                Red
+              </span>
+              <span class="nav-group-item" href="#">
+                <span class="icon icon-record" style="color:#fdbc40"></span>
+                Orange
+              </span>
+              <span class="nav-group-item" href="#">
+                <span class="icon icon-record" style="color:#34c84a"></span>
+                Green
+              </span>
+              <span class="nav-group-item" href="#">
+                <span class="icon icon-record" style="color:#57acf5"></span>
+                Blue
+              </span>
+            </nav>
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Devices</h5>
+              <span class="nav-group-item">
+                <span class="icon icon-drive"></span>
+                Backup disk
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-drive"></span>
+                Backup disk
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-drive"></span>
+                Backup disk
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-drive"></span>
+                Backup disk
+              </span>
+            </nav>
+          </div>
           <div class="pane">
             <table class="table-striped">
               <thead>
@@ -65,109 +142,109 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="file_arq">
+                <tr>
                   <td>bars.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>base.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>button-groups.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>buttons.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>docs.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>forms.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>grid.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>icons.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>images.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>lists.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>mixins.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>navs.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>normalize.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>photon.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>tables.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>tabs.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>utilities.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
                   <td>connors</td>
                 </tr>
-                <tr class="file_arq">
+                <tr>
                   <td>variables.scss</td>
                   <td>Document</td>
                   <td>Oct 13, 2015</td>
